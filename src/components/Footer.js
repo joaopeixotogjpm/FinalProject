@@ -1,6 +1,6 @@
 function Footer(){
     return<>
-    <footer>
+    <footer >
         <section>
             <img src=""/>
             <ul>

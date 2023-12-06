@@ -1,38 +1,164 @@
-.App {
+footer{
+  background-color: #495E57;
+  color: #FFFFFF;
+}
+
+.container {
+   display: grid;
+   grid-template-columns: repeat(12, 7%);
+   grid-auto-rows: minmax(auto, auto);
+   column-gap: 20px;
+   row-gap: 15px;
+}
+nav{
+  grid-column-start: 7;
+  grid-row-start: 1;
+  grid-column-end: end;
+  font-family: 'Markazi Text';
+  font-size: 32px;
+  color: #495E57;
+}
+nav li{
+  float: left;
+}
+nav li a{
+  display: block;
+  color: #666;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+nav ul{
+  list-style-type: none;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+  grid-column-start: 2;
+  grid-row-start: 1;
+  padding-top: 20%;
+  padding-left: 30%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer{
+  grid-column-start:1;
+  grid-column-end: end;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+Main{
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-end: end;
+}
+.HeroSection{
+padding: 30px 220px 30px 220px;
+background-color: #495E57;
+display: flex;
+}
+.HeroSection h1 {
+  color:#F4CE14;
+  font-size: 64px;
+  font-family: 'Markazi Text';
+  letter-spacing: 4px;
+  margin: 0px;
+  font-weight: bold;
+}
+.hsection_one{
+  width: 50%;
+}
+.hsection_two{
+  width: 50%;
+}
+.HeroSection h3{
   color: white;
+  font-family: 'Karla';
+  line-height: 20px;
+  font-size: 24px;
+}
+.HeroSection p{
+  color: white;
+  font-family: 'Karla';
+  font-size: 18px;
+}
+.HeroSection button{
+  background-color: #F4CE14;
+  font-size: large;
+  padding: 20px 110px;
+  font-family: 'Karla';
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 12%;
+  border: none;
+}
+.HeroSection button:hover{
+  background-color: #FBDABB;
+  color: white;
+  box-shadow:inset 0px 0px 0px 1px white
+
+}
+.HeroSection img{
+  width: 32%;
+  height: 100%;
+  border-radius: 10px;
+  margin-left: 52%;
+  box-shadow: 2px 1px 1px #f4cf1486;
 }
 
-.App-link {
-  color: #61dafb;
+.Highlights{
+  padding: 30px 220px 30px 220px;
 }
+.Highlights h1{
+  font-size: 64px;
+  font-family: 'Markazi Text';
+  letter-spacing: 4px;
+  margin: 0px;
+  font-weight: bold;
+}
+.high1{
+  display: flex;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.high1 button{
+  border: none;
+}
+.high2{
+  display: flex;
+  margin: 10% 0% 0% 0%;
+}
+.high2 card:last-child{
+  margin: 0%;
+}
+.high2 card{
+  background-color: #E4E4E4;
+  border-radius: 10px;
+  margin: 0% 18% 0% 0%;
+  width: 320px;
+  height: 500px;
+}
+.high2 card h2{
+  font-size: 48px;
+  padding: 10px;
+  font-family: 'Markazi Text';
+}
+.high2 card h4{
+  font-size:28px;
+  font-weight: 600;
+  color: #F4CE14;
+  padding: 10px;
+  font-family: 'Karla';
+}
+.high2 card p{
+  padding: 10px;
+  font-family: 'Karla';
+}
+.high2 card a{
+  padding: 10px;
+  font-family: 'Karla';
+  font-size: 18px;
+  font-weight: bold;
+}
+.SpecialName{
+  display: flex;
+  justify-content: space-between;
+  align-items: center
 }
