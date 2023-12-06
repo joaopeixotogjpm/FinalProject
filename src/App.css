@@ -37,7 +37,7 @@ nav ul{
 header{
   grid-column-start: 2;
   grid-row-start: 1;
-  padding-top: 20%;
+  padding-top: 33%;
   padding-left: 30%;
 }
 footer{
@@ -91,9 +91,10 @@ display: flex;
   border: none;
 }
 .HeroSection button:hover{
-  background-color: #FBDABB;
-  color: white;
-  box-shadow:inset 0px 0px 0px 1px white
+  background-color: white;
+  color: #F4CE14;
+  box-shadow:inset 0px 0px 0px 1px #F4CE14;
+  transition: 0.7s;
 
 }
 .HeroSection img{
@@ -116,10 +117,24 @@ display: flex;
 }
 .high1{
   display: flex;
-
+  justify-content: space-between
 }
 .high1 button{
   border: none;
+  margin-right: 8%;
+  width: 15%;
+  background-color: white;
+  color:black;
+  border-radius:10px;
+  font-family: 'Karla';
+  font-size: larger;
+  box-shadow: inset 0px 0px 0px 1px black;
+}
+.high1 button:hover{
+  background-color: #495E57;
+  color: white;
+  box-shadow:  0px 0px 0px 1px white;
+  transition: 0.7s;
 }
 .high2{
   display: flex;
@@ -134,18 +149,27 @@ display: flex;
   margin: 0% 18% 0% 0%;
   width: 320px;
   height: 500px;
+
+}
+.high2 card img{
+  width: 320px;
+  height: 213px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .high2 card h2{
   font-size: 48px;
-  padding: 10px;
+  padding: 0px 10px;
   font-family: 'Markazi Text';
+  margin:0px;
 }
 .high2 card h4{
   font-size:28px;
   font-weight: 600;
   color: #F4CE14;
-  padding: 10px;
+  padding: 0px 10px;
   font-family: 'Karla';
+  margin:0px;
 }
 .high2 card p{
   padding: 10px;
@@ -161,4 +185,59 @@ display: flex;
   display: flex;
   justify-content: space-between;
   align-items: center
+}
+.DescriptionCard{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.Testimonials{
+  padding: 130px 220px 130px 220px;
+  background-color: #6666666b;
+}
+.Testimonials h1{
+  font-size: 64px;
+  font-family: 'Markazi Text';
+  letter-spacing: 4px;
+  margin: 0px;
+  font-weight: bold;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 100px;
+}
+.TestCards{
+  display:flex;
+  justify-content: space-around;
+}
+.Testimonials card{
+  height: 150px;
+  width: 210px;
+  border-radius: 10px;
+  background-color: #E4E4E4;
+  display: flex;
+  flex-wrap: wrap;
+  animation:flow 4s infinite ease-in ;
+}
+
+@keyframes flow{
+  0%   {background-color: #fff6c8;}
+  50%  {background-color:#fae88f;}
+  100% {background-color:  #fff6c8;}
+}
+
+.TestCards img{
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius:50% ;
+}
+.Testimonials h4{
+  padding: 0px 10px 10px 10px;
+  font-family: 'Karla';
+  font-size: 18px;
+}
+.Testimonials p{
+  padding: 10px;
+  font-family: 'Karla';
 }
