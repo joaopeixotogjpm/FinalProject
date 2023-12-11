@@ -10,6 +10,7 @@ function Main(){
         <Highlights/>
         <Testimonial/>
         <About/>
-    </main>)
+    </main>
+    )
 }
 export default Main;

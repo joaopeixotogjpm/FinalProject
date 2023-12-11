@@ -1,19 +1,22 @@
-import Header from './components/Header';
-import './App.css';
-import Nav from './components/Nav';
-import Main from './components/Main';
-import Footer from './components/Footer';
+import MainPage from './MainPage';
+import React from 'react';
+import {
+  BrowserRouter, Routes, Route,
+} from 'react-router-dom';
+
+const AppRoutes = () => (
+  <Routes>
+    <Route path="/" element={<MainPage />} />
+    <Route path="/booking" />
+  </Routes>
+);
 
 function App() {
-  return<>
-      <section className="container">
-        <Header/>
-        <Nav/>
-        <Main/>
-        <Footer/>
-      </section>
-      </>
-  ;
+  return (
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  );
 }
 
 export default App;

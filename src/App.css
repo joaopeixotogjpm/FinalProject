@@ -106,7 +106,7 @@ display: flex;
 }
 
 .Highlights{
-  padding: 30px 220px 30px 220px;
+  padding: 130px 220px 130px 220px;
 }
 .Highlights h1{
   font-size: 64px;
@@ -166,7 +166,7 @@ display: flex;
 .high2 card h4{
   font-size:28px;
   font-weight: 600;
-  color: #F4CE14;
+  color: #caab10;
   padding: 0px 10px;
   font-family: 'Karla';
   margin:0px;
@@ -192,8 +192,8 @@ display: flex;
   flex-direction: column;
 }
 .Testimonials{
-  padding: 130px 220px 130px 220px;
-  background-color: #6666666b;
+  padding: 130px 220px 200px 220px;
+  background-color: #E4E4E4
 }
 .Testimonials h1{
   font-size: 64px;
@@ -204,6 +204,7 @@ display: flex;
   justify-content: center;
   display: flex;
   padding-bottom: 100px;
+  color: #F4CE14;
 }
 .TestCards{
   display:flex;
@@ -216,7 +217,7 @@ display: flex;
   background-color: #E4E4E4;
   display: flex;
   flex-wrap: wrap;
-  animation:flow 4s infinite ease-in ;
+  animation:flow 8s infinite ease-in ;
 }
 
 @keyframes flow{
@@ -240,4 +241,53 @@ display: flex;
 .Testimonials p{
   padding: 10px;
   font-family: 'Karla';
+}
+.About{
+  padding: 130px 220px 200px 220px;
+  display: flex;
+}
+.About h1{
+  font-size: 64px;
+  font-family: 'Markazi Text';
+  letter-spacing: 4px;
+  margin: 0px;
+}
+.About{
+  font-family: 'Karla';
+  font-size: 18px;
+}
+.AboutText{
+  width: 50%;
+}
+.AboutImg{
+ display: flex;
+ margin-left: 10%;
+}
+.About p{
+  margin-right:15% ;
+}
+.imgA{
+  position: absolute;
+  margin-left: 150px;
+  z-index: 0;
+}
+@media (max-width: 700px) {
+  .grid-adjustable-columns {
+    display: grid;
+    grid-auto-flow: row;
+  }
+}
+
+@media (min-width: 701px) {
+  .grid-adjustable-columns {
+    width: min(1000px,75rem);
+    margin: 0 auto;
+    grid-auto-flow: column;
+    gap: 1em;
+  }
+}
+.imgB{
+  position: absolute;
+  margin-top: 120px;
+  z-index: 1;
 }
